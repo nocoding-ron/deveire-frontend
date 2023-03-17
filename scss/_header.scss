@@ -8,6 +8,10 @@
     border-bottom: 1px solid #bebebe;
     padding-top: 10px;
     padding-bottom: 10px;
+    &.stick{
+        position: fixed;
+        background-color: #222;
+    }
     .header-row{
         align-items: center;
     }

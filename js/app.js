@@ -18,3 +18,16 @@ $(document).ready(function(){
     })
 });
 
+
+const headerOffset = 100;
+
+$(window).on('scroll', function(){
+    let header = $('.main-header');
+    let scrollTop = $(window).scrollTop();
+    
+    if(scrollTop >= headerOffset){
+        header.addClass('stick');
+    } else {
+        header.removeClass('stick')
+    }
+})

@@ -14183,6 +14183,11 @@ readers do not read off random characters that represent icons */
   padding-bottom: 10px;
 }
 
+.main-header.stick {
+  position: fixed;
+  background-color: #222;
+}
+
 .main-header .header-row {
   -webkit-box-align: center;
       -ms-flex-align: center;

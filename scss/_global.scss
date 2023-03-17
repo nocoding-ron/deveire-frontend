@@ -1,0 +1,35 @@
+.section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__gray{
+        background: rgba(33,37,41,0.03)
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 20px;
+        h3{
+            text-transform: uppercase;
+        }
+
+    }
+
+    .centered-cta{
+        text-align: center;
+        button{
+            border-radius: 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+        @include media-breakpoint-down(md) {
+            button{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+    }
+
+}

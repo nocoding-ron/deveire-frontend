@@ -1,0 +1,96 @@
+.main-header{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid #bebebe;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .header-row{
+        align-items: center;
+    }
+    .logo img{
+        max-width: 100px;
+    }
+    .navbar{
+        flex-direction: row-reverse;
+    }
+
+    .nav{
+        &-item{
+            padding: 0 10px;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color:#fff;
+                font-weight: 700;
+                font-size: 12px;
+                position: relative;
+                &::after{
+                    content: " ";
+                    width: 0;
+                    height: 2px;
+                    background-color: #fff;
+                    display: block;
+                    position: absolute;
+                    transition: width .2s;
+                }
+               
+            }
+            &:hover{ a::after{width: 100%; } }
+            
+        }
+    }
+    .mobile-nav-btn, .close-nav-btn{
+        display: none;
+    }
+    @include media-breakpoint-down(md) {
+        .mobile-nav-btn{
+          display: block;
+          background-color: transparent;
+          border: 0;
+          color: #fff;
+          font-size: 26px;
+        }
+        .nav-container{
+            background-color: #fff;
+            position: fixed;
+            top: 0px;
+            left: -10px;
+            right: -10px;
+            min-height: 100vh;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            &.open{
+                transform: translateX(0%);
+            }
+            .nav{
+                flex-direction: column;
+                &-item{
+                   padding: 15px 20px;
+                   border-bottom: 1px solid;
+                   a{
+                    color: #222 ;
+                    font-size: 18px;
+                }
+                } 
+            }
+        }
+        .close-nav-btn{
+            display: block;
+            background: transparent;
+            border: none;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 30px;
+            left: 45%;
+            i{ font-size: 45px;}
+            &:hover{
+                color: red;
+            }
+
+        }
+    }
+}

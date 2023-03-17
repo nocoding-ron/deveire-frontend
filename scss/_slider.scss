@@ -1,0 +1,61 @@
+.slider{
+    padding: 0;
+    position: relative;
+    .item{
+        background-size: cover;
+    }
+    &__backdrop{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.4);
+    }
+    &__caption{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        min-height: 500px;
+        padding: 0 10%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        justify-content: center;
+    
+        h2{
+            text-transform: uppercase;
+        }
+    }
+    .owl{
+        &-nav{
+            button[class*='owl-']{
+                position: absolute;
+                z-index: 5;
+                top: 42%;
+                font-size: 32px;
+                color: #ffff;
+                background-color: rgba(0,0,0,.5);
+                margin: 0;
+                height: 48px;
+                border-radius: 0;
+            }
+        }
+        &-next{
+            right: 0;
+            span{
+                margin-right: 15px;
+                margin-left: 10px;
+            }
+        }
+        &-prev{
+            left: 0;
+            span{
+                margin-right: 10px;
+                margin-left: 15px;
+            }
+        }
+    }
+}

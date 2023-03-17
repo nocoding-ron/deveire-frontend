@@ -1,10 +1,310 @@
 <!DOCTYPE html>
-<html>
-<meta title="Deveire Frontend Challenge">
-<body>
-
-<h1>Deveire Frontend Challenge</h1>
-<p>This page is the <code>index.html</code> of <code>deveire-frontent-challenge</code>.</p>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="Deveire Frontend Challenge">
+    <title>Deveire Frontend Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>  
+    <header class="main-header">
+        <div class="container">
+            <div class="row header-row">
+                <div class="col-3 logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="Deveire">
+                    </a>
+                </div>
+                <div class="col-9">
+                    <nav class="navbar">
+                        <button class="mobile-nav-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="nav-container" id="mainMenu">
+                            <ul class="nav">
+                                <li class="nav-item"><a href="#">Home</a></li>
+                                <li class="nav-item"><a href="#">Features</a></li>
+                                <li class="nav-item"><a href="#">Pages</a></li>
+                                <li class="nav-item"><a href="#">Portfolio</a></li>
+                                <li class="nav-item"><a href="#">Blog</a></li>
+                                <li class="nav-item"><a href="#">Shop</a></li>
+                                <li class="nav-item"><a href="#">Sign Up</a></li>
+                            </ul>
+                            <button class="close-nav-btn">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" style="background-image: url('./img/banner.jpg');"> 
+                            <div class="slider__caption">
+                                <h2>Welcome to Deveire</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quidem molestias numquam excepturi ut voluptatem dolores id distinctio nam ea!</p>
+                            </div>
+                            <div class="slider__backdrop"></div>
+                        </div>
+                        <div class="item" style="background-image: url('./img/banner-2.jpg');"> 
+                            <div class="slider__caption">
+                                <h2>Welcome to Deveire</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quidem molestias numquam excepturi ut voluptatem dolores id distinctio nam ea!</p>
+                            </div>
+                            <div class="slider__backdrop"></div>
+                        </div>
+                        <div class="item" style="background-image: url('./img/banner.jpg');"> 
+                            <div class="slider__caption">
+                                <h2>Welcome to Deveire</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quidem molestias numquam excepturi ut voluptatem dolores id distinctio nam ea!</p>
+                            </div>
+                            <div class="slider__backdrop"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="row">
+                <div class="col section__title">
+                    <h3>Features Overview</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-icon">
+                        <div class="text-icon__title">
+                            <i class="fa-solid fa-caret-right"></i>Lorem, ipsum dolor.
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolorum?</p>
+                    </div>
+                    <div class="text-icon">
+                        <div class="text-icon__title">
+                            <i class="fa-solid fa-caret-right"></i>Lorem, ipsum dolor.
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolorum?</p>
+                    </div>
+                    <div class="text-icon">
+                        <div class="text-icon__title">
+                            <i class="fa-solid fa-caret-right"></i>Lorem, ipsum dolor.
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolorum?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-icon">
+                        <div class="text-icon__title">
+                            <i class="fa-solid fa-caret-right"></i>Lorem, ipsum dolor.
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolorum?</p>
+                    </div>
+                    <div class="text-icon">
+                        <div class="text-icon__title">
+                            <i class="fa-solid fa-caret-right"></i>Lorem, ipsum dolor.
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolorum?</p>
+                    </div>
+                    <div class="text-icon">
+                        <div class="text-icon__title">
+                            <i class="fa-solid fa-caret-right"></i>Lorem, ipsum dolor.
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolorum?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-icon">
+                        <div class="text-icon__title">
+                            <i class="fa-solid fa-caret-right"></i>Lorem, ipsum dolor.
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolorum?</p>
+                    </div>
+                    <div class="text-icon">
+                        <div class="text-icon__title">
+                            <i class="fa-solid fa-caret-right"></i>Lorem, ipsum dolor.
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolorum?</p>
+                    </div>
+                    <div class="text-icon">
+                        <div class="text-icon__title">
+                            <i class="fa-solid fa-caret-right"></i>Lorem, ipsum dolor.
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolorum?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="row">
+                <div class="col section__title">
+                    <h3>Smart Pricing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 pricing">
+                    <div class="card">
+                        <div class="card-header">Starter</div>
+                        <div class="card-body">
+                          <h5 class="price"><span class="currency">$</span>7<span class="duration">/mo</span></h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger">Sign Up</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 pricing featured">
+                    <div class="card">
+                        <div class="card-header">Professional</div>
+                        <div class="card-body">
+                          <h5 class="price"><span class="currency">$</span>12<span class="duration">/mo</span></h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-success">Sign Up</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 pricing">
+                    <div class="card">
+                        <div class="card-header">Business</div>
+                        <div class="card-body">
+                          <h5 class="price"><span class="currency">$</span>19<span class="duration">/mo</span></h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger">Sign Up</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 pricing">
+                    <div class="card">
+                        <div class="card-header">Enterprise</div>
+                        <div class="card-body">
+                          <h5 class="price"><span class="currency">$</span>29<span class="duration">/mo</span></h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger">Sign Up</button>
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="row">
+                <div class="col section__title">
+                    <h3>Smart Pricing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="post">
+                        <div class="post__title">
+                            <h4><i class="fa-solid fa-box-open"></i> Lorem ipsum dolor sit amet.</h4>
+                        </div>
+                        <div class="post__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident voluptatem quae rem tempora quod sint corporis deleniti id assumenda quos, sequi, inventore quam consequatur. Dolorum repudiandae quidem provident dolore!</div>
+                    </div>
+                    <div class="post">
+                        <div class="post__title">
+                            <h4><i class="fa-solid fa-box-open"></i> Lorem ipsum dolor sit amet.</h4>
+                        </div>
+                        <div class="post__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident voluptatem quae rem tempora quod sint corporis deleniti id assumenda quos, sequi, inventore quam consequatur. Dolorum repudiandae quidem provident dolore!</div>
+                    </div>
+                    <div class="post">
+                        <div class="post__title">
+                            <h4><i class="fa-solid fa-box-open"></i> Lorem ipsum dolor sit amet.</h4>
+                        </div>
+                        <div class="post__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident voluptatem quae rem tempora quod sint corporis deleniti id assumenda quos, sequi, inventore quam consequatur. Dolorum repudiandae quidem provident dolore!</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="post">
+                        <div class="post__title">
+                            <h4><i class="fa-solid fa-box-open"></i> Lorem ipsum dolor sit amet.</h4>
+                        </div>
+                        <div class="post__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident voluptatem quae rem tempora quod sint corporis deleniti id assumenda quos, sequi, inventore quam consequatur. Dolorum repudiandae quidem provident dolore!</div>
+                    </div>
+                    <div class="post">
+                        <div class="post__title">
+                            <h4><i class="fa-solid fa-box-open"></i> Lorem ipsum dolor sit amet.</h4>
+                        </div>
+                        <div class="post__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident voluptatem quae rem tempora quod sint corporis deleniti id assumenda quos, sequi, inventore quam consequatur. Dolorum repudiandae quidem provident dolore!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section__gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col section__title">
+                        <h3>Starter's Guide to Create Landing Pages</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col centered-cta">
+                        <button class="btn btn-primary"> <i class="fa fa-star"></i> Start Your Free Trial</button>
+                        <strong>- OR -</strong>
+                        <button class="btn btn-danger"> <i class="fa-solid fa-right-to-bracket"></i> Sign Up for a Subscription</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>© 2016 - 2023 Deveire.com - All Rights Reserved.</p>
+                    <ul class="term-links">
+                        <li><a href="#">Terms</a></li>
+                        <li class="sep">|</li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 social">
+                    <div class="social__icons">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script> 
+    <script src="./js/app.js"></script>
+   
 </body>
 </html>

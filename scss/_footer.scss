@@ -1,0 +1,45 @@
+.main-footer{
+    background-color: #222;
+    padding: 20px 0;
+    color: #bebebe;
+    font-size: 12px;
+    .term-links{
+        padding:0;
+        margin:0;
+        li{
+            display: inline-block;
+            a{ 
+                text-decoration: none;
+                color: #bebebe;
+                &:hover{ color: #fff; }
+            }
+        }
+    }
+    .social{
+        display: flex;
+        flex-direction: row-reverse;
+        &__icons{
+            ul { padding: 0; margin: 0; }
+            li{
+                display: inline-block;
+                padding: 0 10px;
+                a{ 
+                    color: #bebebe; 
+                    &:hover{ color: #fff; }
+                }
+            }
+            
+        }
+    }
+    
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        .term-links{
+            margin-bottom: 1rem;
+        }
+        .social{
+            display: block;
+        }
+    }
+}
+
